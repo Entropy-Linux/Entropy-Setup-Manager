@@ -1,4 +1,4 @@
 {
-  "Test_Script": "script.sh",
+  "Test_Script": "arch-generic.sh",
   "XYZ": "xyz.sh"
 }
