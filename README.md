@@ -1,8 +1,12 @@
 # Entropy Setup Manager
 > Simple CLI manager script for setup scripts in Entropy Linux
 
-![image](https://github.com/user-attachments/assets/ad4f6889-91a3-4376-9029-4fcebe18dd2a)
+### Screenshots & Demo
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ad4f6889-91a3-4376-9029-4fcebe18dd2a" width="35%">
+  <img src="https://github.com/user-attachments/assets/a529ea3a-5c8b-4f18-ae6d-13393c2b2bca" width="45%">
+</p>
 
 ---
 
