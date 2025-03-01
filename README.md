@@ -3,20 +3,30 @@
 
 ---
 
-### Dependencies:
-`git jq dialog`
+## Setup
+> Run `setup.sh` for quick install, or execute:
+```bash
+sudo sh -c 'curl -fsSL https://raw.githubusercontent.com/Entropy-Linux/Entropy-Setup-Manager/refs/heads/main/setup.sh -o /tmp/setup.sh && chmod +x /tmp/setup.sh && /tmp/setup.sh'
+```
+
+---
+
 
 ### How to:
 > Important information:
+- Dependencies: `git jq dialog tree`
 - Manager looks for `.json` files within `.data/` directory.
 - Specify `.json` file in runtime with a `--data <path/file.json>` flag.
 - Scripts execute in same order as defined in `data.json` (top to bottom)
 - Spaces in `data.json` are prohibited! (will display null null)
+- After installation with `setup.sh`, project's root dir is `/bin/setup-manager/`
+
 ### Example `data.json`
+> Path defaults to `/bin/setup-manager/scripts/`
 ```json
 {
-  "First_Script": "modules/script.sh",
-  "Another_Module": "modules/another.sh"
+  "First_Script": "script.sh",
+  "Another_Module": "another.sh"
 }
 ```
 
@@ -28,7 +38,7 @@
 ├── data
 │   ├── ...
 │   │   ├── ...
-├── modules
+├── scripts
 │   ├── ...
 ├── README.md
 └── LICENSE
